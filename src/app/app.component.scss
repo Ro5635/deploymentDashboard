@@ -1,0 +1,44 @@
+.dash{
+
+  font-family: 'Open Sans', sans-serif;
+
+  &--header{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+
+    &-logo{
+
+
+    }
+  }
+
+  &--card{
+    margin: auto;
+    margin-top: 5%;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+
+
+    &-side{
+      width: 45%;
+      text-align: center;
+
+
+      &-item{
+        padding-bottom: 10px;
+
+      }
+
+    }
+
+    &-center{
+      background-color: white;
+    }
+
+  }
+
+}
+
