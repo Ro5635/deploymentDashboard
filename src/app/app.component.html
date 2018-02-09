@@ -1,35 +1,47 @@
-<div class="dash--header animated fadeInDownBig">
+<app-header></app-header>
 
-  <div class="dash--header-logo"><img src="http://www.griffiths-waite.co.uk/img/icon.png"></div>
+<section class="dash--section animated fadeInDown">
 
-  <div><h2>Developer Dashboard</h2></div>
-</div>
+  <mat-card class="dash--card">
 
+    <div class="dash--card-side">
+      <mat-list>
+        <div class="dash--card-side-item"><a target="_blank" href="http://dockerdeploy:7080">Live Dev Environment -
+          http://dockerdeploy:7080</a></div>
+        <div class="dash--card-side-item"><a target="_blank" href="http://dockerdeploy:11080">Live Test Environment -
+          http://dockerdeploy:11080</a></div>
+        <div class="dash--card-side-item">Item 3</div>
 
-<mat-card class="dash--card animated fadeInDown">
+      </mat-list>
+    </div>
 
-  <div class="dash--card-side">
-    <mat-list>
-      <div class="dash--card-side-item">Item 1</div>
-      <div class="dash--card-side-item">Item 2</div>
-      <div class="dash--card-side-item">Item 3</div>
+    <div></div>
 
-    </mat-list>
+    <div class="dash--card-side">
+      <mat-list>
+        <div class="dash--card-side-item"><a target="_blank" href="http://dockerdeploy/mochatests">Mocha Tests
+          Results</a>
+        </div>
+        <div class="dash--card-side-item">Item 5</div>
+        <div class="dash--card-side-item">Item 6</div>
+      </mat-list>
+    </div>
+
+  </mat-card>
+
+  <div class="dash--subtitle">
+    <h2>Deployment Options</h2>
+
   </div>
 
-  <div></div>
+  <mat-card class="dash--card ">
+    <button mat-raised-button (click)="openDialog()">Deploy to Test</button>
+  </mat-card>
 
-  <div class="dash--card-side">
-    <mat-list>
-      <div class="dash--card-side-item">Item 4</div>
-      <div class="dash--card-side-item">Item 5</div>
-      <div class="dash--card-side-item">Item 6</div>
-    </mat-list>
-  </div>
+</section>
 
-</mat-card>
 
-<mat-card class="dash--card animated fadeInDown">
-  <h3>Deployment Options</h3>
-  <button mat-raised-button (click)="openDialog()">Deploy to Test</button>
-</mat-card>
+<footer class="footer">
+  <img alt="Life" src="assets/coffee.png" class="footer--img animated jackInTheBox">
+
+</footer>

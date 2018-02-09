@@ -1,0 +1,25 @@
+.dash {
+
+  font-family: 'Open Sans', sans-serif;
+
+  &--section {
+    width: 80%;
+    margin: auto;
+  }
+
+  &--header {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+
+    &-logo {
+
+    }
+  }
+
+  &--header:first-child {
+    margin-bottom: 5%;
+  }
+
+}

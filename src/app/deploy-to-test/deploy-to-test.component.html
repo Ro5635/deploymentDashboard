@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Deploy To Test Environment?</h1>
+
+<div mat-dialog-content>
+  <mat-select [(ngModel)]="choosenEmoji">
+    <mat-option *ngFor="let emoji of emojis" [value]="emoji">
+      {{ emoji }}
+    </mat-option>
+  </mat-select>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="confirmSelection()" color="primary">
+    Commit
+  </button>
+  <button mat-button (click)="dialogRef.close()">
+    Abort
+  </button>
+</div>
