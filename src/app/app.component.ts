@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { DeployToTestComponent } from './deploy-to-test/deploy-to-test.component';
+import { DeployToTestComponent } from './deploy-to-env/deploy-to-env.component';
 import {MatDialog} from '@angular/material';
 
 

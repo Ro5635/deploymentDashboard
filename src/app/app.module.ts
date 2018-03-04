@@ -14,7 +14,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { DeployToTestComponent } from './deploy-to-test/deploy-to-test.component';
+import { DeployToTestComponent } from './deploy-to-env/deploy-to-env.component';
 
 
 @NgModule({

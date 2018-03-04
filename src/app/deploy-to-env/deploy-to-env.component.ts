@@ -2,9 +2,9 @@ import {Component, OnInit, Inject} from '@angular/core';
 import {MatDialogRef, MAT_DIALOG_DATA, MatSnackBar} from '@angular/material';
 
 @Component({
-  selector: 'app-deploy-to-test',
-  templateUrl: './deploy-to-test.component.html',
-  styleUrls: ['./deploy-to-test.component.css']
+  selector: 'app-deploy-to-env',
+  templateUrl: './deploy-to-env.component.html',
+  styleUrls: ['./deploy-to-env.component.css']
 })
 export class DeployToTestComponent implements OnInit {
 
