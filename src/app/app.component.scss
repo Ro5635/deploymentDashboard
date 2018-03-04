@@ -14,6 +14,20 @@
 
   }
 
+  &--links {
+    margin:auto;
+    margin-bottom: 5%;
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &_link {
+      color: black;
+    }
+
+  }
+
   &--card {
     margin: auto;
     margin-bottom: 5%;
@@ -39,6 +53,12 @@
     &-center {
       background-color: white;
     }
+
+  }
+
+  &--verticalSpace{
+    height: 5vh;
+    width: 100%;
 
   }
 

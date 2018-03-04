@@ -2,41 +2,36 @@
 
 <section class="dash--section animated fadeInDown">
 
-  <mat-card class="dash--card">
 
-    <div class="dash--card-side">
-      <mat-list>
-        <div class="dash--card-side-item"><a target="_blank" href="http://dockerdeploy:7080">Live Dev Environment -
-          http://dockerdeploy:7080</a></div>
-        <div class="dash--card-side-item"><a target="_blank" href="http://dockerdeploy:11080">Live Test Environment -
-          http://dockerdeploy:11080</a></div>
-        <div class="dash--card-side-item">Item 3</div>
+    <div class="dash--links">
 
-      </mat-list>
+      <a *ngFor="let pageLink of pageLinks"  class="dash--links_link" href="{{pageLink.url}}" target="_blank"><button mat-raised-button>{{pageLink.name}}</button></a>
+
     </div>
 
-    <div></div>
 
-    <div class="dash--card-side">
-      <mat-list>
-        <div class="dash--card-side-item"><a target="_blank" href="http://dockerdeploy/mochatests">Mocha Tests
-          Results</a>
-        </div>
-        <div class="dash--card-side-item">Item 5</div>
-        <div class="dash--card-side-item">Item 6</div>
-      </mat-list>
-    </div>
-
-  </mat-card>
 
   <div class="dash--subtitle">
     <h2>Deployment Options</h2>
+  </div>
+
+  <div class="dash--verticalSpace"></div>
+
+  <div *ngFor="let environment of environments">
+
+    <div class="dash--subtitle">
+      <h3>{{environment.name}}</h3>
+
+    </div>
+    <mat-card class="dash--card ">
+    <p>
+      {{environment.description}}
+    </p>
+    <button mat-raised-button (click)="openDialog(environment)">Deploy</button>
+  </mat-card>
 
   </div>
 
-  <mat-card class="dash--card ">
-    <button mat-raised-button (click)="openDialog()">Deploy to Test</button>
-  </mat-card>
 
 </section>
 
